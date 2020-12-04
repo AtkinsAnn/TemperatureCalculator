@@ -5,13 +5,7 @@
      <meta charset="utf-8">
      <meta name="author" content="Anne">
      <meta name="viewport" content="width=device-width, initial-scale=1">       
-     <script>
-          function calculateTemp(){
-         var x =  document.getElementById("elevation").innerHTML;
-         var y = (-10 * x) + 20;
-           } 
-          document.getElementById("output").innerHTML = y.toString();
-     </script>
+    
      <style>
          
   .button {
@@ -38,7 +32,13 @@
           <input id = "name" type = "text">
           <button onclick="calculateTemp()" id= "output" class = "button button1">Get Temperature at your destination elevation</button>
           <p id="output"></p>
-
+ <script>
+          function calculateTemp(){
+         var x =  document.getElementById("elevation").innerHTML;
+         var y = (-10 * x) + 20;
+           } 
+          document.getElementById("output").innerHTML = y.toString();
+     </script>
 
 </body>
 </html>
