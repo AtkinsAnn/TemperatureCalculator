@@ -9,8 +9,8 @@
           function calculateTemp(){
          var x =  document.getElementById("elevation").innerHTML;
          var y = (-10 * x) + 20;
-         document.getElementById("output").innerHTML = y.ToString();
-           }
+           } 
+          document.getElementById("output").innerHTML = y.toString();
      </script>
      <style>
          
@@ -36,8 +36,7 @@
           <input id="elevation" type = "number">
           <p>Enter your first name:</p>
           <input id = "name" type = "text">
-          <p>Click button for output</p>
-          <button onclick = "calculateTemp()" id= "output" class = "button button1">Click for Temperature at your destination elevation</button>
+          <button onclick="calculateTemp()" id= "output" class = "button button1">Get Temperature at your destination elevation</button>
           <p id="output"></p>
 
 
