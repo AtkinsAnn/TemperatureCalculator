@@ -6,9 +6,9 @@
      <meta name="author" content="Anne">
      <meta name="viewport" content="width=device-width, initial-scale=1">       
      <script>
-          function showCongratulations(theButtonClicked){
-          document.getElementById("result_display").innerHTML = "Congrats, you did it!<p> You got the page to update!</p>" 
-          theButtonClicked.innerHTML = "Click Me Again!"
+          function calculateTemp(elevation){
+         var x =  document.getElementById("elevation").innerHTML;
+          
            }
      </script>
      <style>
@@ -20,7 +20,9 @@
      <body>
 <h1>Hiker's Temperature Converter</h1>
 <p>Enter destination height in feet:</p>
-          <input type = "number"></input>
+          <input id="elevation" name = "Destination Elevation" type = "number">
+          <input name = "Your name" type = "text">
+          <button onclick = "calculateTemp()" id= "output"></button>
 
 
 </body>
