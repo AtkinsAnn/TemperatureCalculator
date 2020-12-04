@@ -6,9 +6,10 @@
      <meta name="author" content="Anne">
      <meta name="viewport" content="width=device-width, initial-scale=1">       
      <script>
-          function calculateTemp(elevation){
+          function calculateTemp(){
          var x =  document.getElementById("elevation").innerHTML;
-          
+         var y = (-10 * x) + 20;
+         document.getElementById("output").innerHTML = y.ToString();
            }
      </script>
      <style>
@@ -20,8 +21,10 @@
      <body>
 <h1>Hiker's Temperature Converter</h1>
 <p>Enter destination height in feet:</p>
-          <input id="elevation" name = "Destination Elevation" type = "number">
-          <input name = "Your name" type = "text">
+          <input id="elevation" type = "number">
+          <p>Enter your first name:</p>
+          <input id = "name" type = "text">
+          <p>Click button for output</p>
           <button onclick = "calculateTemp()" id= "output"></button>
 
 
