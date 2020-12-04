@@ -5,7 +5,15 @@
      <meta charset="utf-8">
      <meta name="author" content="Anne">
      <meta name="viewport" content="width=device-width, initial-scale=1">       
-    
+     <script>
+         function calculateTemp(){
+         //var x =  document.getElementById("elevation").innerHTML;
+         //var y = (-10 * x) + 20;
+         //var name = document.getElementById("name").innerHTML;
+         document.getElementById("output").innerHTML = "Testing"; 
+           } 
+          
+ </script>
      <style>
          
   .button {
@@ -30,15 +38,8 @@
           <input id="elevation" type = "number">
           <p>Enter your first name:</p>
           <input id = "name" type = "text">
-          <button onclick="calculateTemp()" class = "button button1">Get Temperature</button>
+          <button onclick = "calculateTemp()" class = "button button1">Get Temperature</button>
           <p id="output"></p>
- <script>
-          function calculateTemp(){
-         var x =  document.getElementById("elevation").innerHTML;
-         var y = (-10 * x) + 20;
-           } 
-          document.getElementById("output").innerHTML = y.toString();
-     </script>
 
 </body>
 </html>
