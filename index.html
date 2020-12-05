@@ -10,8 +10,8 @@
          var x =  document.getElementById("elevation").value;
          var y = (-10 * x) + 20;
          var name = document.getElementById("name").value;
-         document.getElementById("output").innerHTML = name + " " + "The temperature at " +
-              x.toString() + "ft, " + "is " y.toString() + "Degrees Celsius."; 
+         document.getElementById("output").innerHTML = name;
+         document.getElementById("outputb").innerHTML= "The temperature is " + y.toString() + "Degrees Celsius."; 
               //improve app usefullness by adding code to give cold survival advice based on temperature at the elevation
            } 
           
@@ -31,8 +31,6 @@
   margin: 4px 2px;
   cursor: pointer;
 }
-
-
 
      </style>
      </head>
