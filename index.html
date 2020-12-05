@@ -7,9 +7,10 @@
      <meta name="viewport" content="width=device-width, initial-scale=1">       
      <script>
          function calculateTemp(){
-         //var x =  document.getElementById("elevation").innerHTML;
+         var x =  document.getElementById("elevation").value;
          //var y = (-10 * x) + 20;
-         //var name = document.getElementById("name").innerHTML;
+         var name = document.getElementById("name").value;
+         document.getElementById("outputb").innerHTML = name.toString(); 
          document.getElementById("output").innerHTML = "Testing"; 
            } 
           
@@ -40,6 +41,7 @@
           <input id = "name" type = "text">
           <button onclick = "calculateTemp()" class = "button button1">Get Temperature</button>
           <p id="output"></p>
+          <p id="outputb"></p>
 
 </body>
 </html>
