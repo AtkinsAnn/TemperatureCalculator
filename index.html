@@ -8,10 +8,10 @@
      <script>
          function calculateTemp(){
          var x =  document.getElementById("elevation").value;
-         //var y = (-10 * x) + 20;
+         var y = (-10 * x) + 20;
          var name = document.getElementById("name").value;
-         document.getElementById("outputb").innerHTML = name.toString(); 
-         document.getElementById("output").innerHTML = "Testing"; 
+        // document.getElementById("outputb").innerHTML = name.toString(); 
+         document.getElementById("output").innerHTML = y.toString() + name.toString(); 
            } 
           
  </script>
